@@ -22,5 +22,3 @@ class User extends Database implements iUser {
 	}//end change_pass
 }//end class
 $user = new User();
-/* End of file User.php */
-/* Location: .//D/xampp/htdocs/laundry/class/User.php */

@@ -8,7 +8,7 @@ class Laundry extends Database implements iLaundry {
 		$sql = "INSERT INTO laundry_type (laun_type_desc, laun_type_price)
 				VALUES(?,?)";
 		return $this->insertRow($sql, [$type, $price]);
-	}//end insert_laundry
+	}
 
 	public function get_all_laundry()
 	{
@@ -46,11 +46,11 @@ class Laundry extends Database implements iLaundry {
 		return $this->getRows($sql, [$claimed]);
 	}//end all_laundry
 
-	public function new_laundry($customer, $priority, $weight, $type)
+	public function new_laundry($customer, $weight, $type)
 	{
-		$sql = "INSERT INTO laundry(customer_name, laun_priority, laun_weight, laun_type_id)
-				VALUES(?,?,?,?);";
-		return $this->insertRow($sql, [$customer, $priority, $weight, $type]);
+		$sql = "INSERT INTO laundry(customer_name, laun_weight, laun_type_id)
+				VALUES(?,?,?);";
+		return $this->insertRow($sql, [$customer, $weight, $type]);
 	}//end new_laundry
 
 	public function delete_laundry($laun_id)
@@ -68,12 +68,12 @@ class Laundry extends Database implements iLaundry {
 		return $this->getRow($sql, [$laun_id]);
 	}//end get_laundry
 
-	public function edit_laundry($laun_id, $customer, $priority, $weight, $type)
+	public function edit_laundry($laun_id, $customer, $weight, $type)
 	{
 		$sql = "UPDATE laundry 
-				SET customer_name = ?, laun_priority = ?, laun_weight = ?, laun_type_id = ?
+				SET customer_name = ?, laun_weight = ?, laun_type_id = ?
 				WHERE laun_id = ?";
-		return $this->updateRow($sql, [$customer, $priority, $weight, $type, $laun_id]);
+		return $this->updateRow($sql, [$customer, $weight, $type, $laun_id]);
 	}//end edit_laundry
 
 	public function get_laundry2($laun_id)
@@ -88,7 +88,7 @@ class Laundry extends Database implements iLaundry {
 
 	public function claim_laundry($laun_id)
 	{
-		$claimed = 1;//1 means ge claim na.. dili na e display sa table laundry
+		$claimed = 1;
 		$sql = "UPDATE laundry 
 				SET laun_claimed = ?
 				WHERE laun_id = ?";
@@ -96,5 +96,3 @@ class Laundry extends Database implements iLaundry {
 	}//end claim_laundry
 }//end class
 $laundry = new Laundry();
-/* End of file Laundry.php */
-/* Location: .//D/xampp/htdocs/laundry/class/Laundry.php */

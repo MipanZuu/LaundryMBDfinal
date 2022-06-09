@@ -7,8 +7,7 @@ class Database extends Connection{
 
 	public function __construct(){
 
-		parent::__construct();//put this if naay default constructor and class na iya ge extendnan para ma apil sad diri
-		//above code copy the default constructor of the class extended
+		parent::__construct();
 
 		if(session_status() == PHP_SESSION_NONE)
 		{
