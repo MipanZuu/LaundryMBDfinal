@@ -21,6 +21,3 @@ class Sales extends Database implements iSales {
 
 }//end class
 $sales = new Sales();
-
-/* End of file Sales.php */
-/* Location: .//D/xampp/htdocs/laundry/class/Sales.php */

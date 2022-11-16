@@ -30,9 +30,9 @@
         <!-- Logo -->
         <a href="home.php" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini"><b>L</b>AU</span>
+          <span class="logo-mini"><b>SS</b>D</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>LAU</b>NDRY</span>
+          <span class="logo-lg"><b>SSD</b>LAUNDRY</span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
@@ -48,23 +48,18 @@
 
       <!-- =============================================== -->
 
-      <!-- Left side column. contains the sidebar -->
+     
       <aside class="main-sidebar">
-        <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
-          <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
           <?php include_once('navigation.php'); ?>
           </ul>
         </section>
-        <!-- /.sidebar -->
       </aside>
 
       <!-- =============================================== -->
 
-      <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
             <small>Welcome Administrator!</small>
@@ -111,9 +106,9 @@
 
       <footer class="main-footer">
         <div class="pull-right hidden-xs">
-          <b>Version</b> 2.3.0
+          <b>FP MBD IUP 2022</b>
         </div>
-        <strong>Copyright &copy; 2016-2017 <a href="http://www.google.com">Laundry Shop</a>.</strong> All rights reserved.
+        <strong>Copyright Denta, Sera, Fina Laundry Management System.</strong>
       </footer>
 
       <div class="control-sidebar-bg"></div>

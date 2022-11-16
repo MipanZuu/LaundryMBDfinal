@@ -10,7 +10,6 @@ $laundries = $laundry->all_laundry();
                 <tr>
                     <th></th>
                     <th>Customer Name</th>
-                    <th><center>Priority #</center></th>
                     <th><center>Weight</center></th>
                     <th><center>Type</center></th>
                     <th><center>Date Received</center></th>
@@ -26,7 +25,6 @@ $laundries = $laundry->all_laundry();
                 <tr align="center">
                     <td><input type="checkbox" name="imSlepy" value="<?= $l['laun_id']; ?>"></td>
                     <td align="left"><?= ucwords($l['customer_name']); ?></td>
-                    <td><?= $l['laun_priority']; ?></td>
                     <td><?= $l['laun_weight']; ?></td>
                     <td><?= $l['laun_type_desc']; ?></td>
                     <td><?= $l['laun_date_received']; ?></td>
@@ -44,7 +42,6 @@ $laundries = $laundry->all_laundry();
 </div>
 
 
-<!-- for the datatable of employee -->
 <script type="text/javascript">
     $(document).ready(function() {
         $('#myTable-laundry').DataTable();

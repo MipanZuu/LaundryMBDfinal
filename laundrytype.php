@@ -98,9 +98,9 @@
 
       <footer class="main-footer">
         <div class="pull-right hidden-xs">
-          <b>Version</b> 2.3.0
+          <b>FP MBD IUP 2022</b>
         </div>
-        <strong>Copyright &copy; 2016-2017 <a href="http://www.google.com">Laundry Shop</a>.</strong> All rights reserved.
+        <strong>Copyright Denta, Sera, Fina Laundry Management System.</strong>
       </footer>
 
       <div class="control-sidebar-bg"></div>

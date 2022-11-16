@@ -25,12 +25,6 @@ $db->Disconnect();
 				    </div>
 				  </div>
 				  <div class="form-group">
-				    <label class="control-label col-sm-3" for="">Priority #:</label>
-				    <div class="col-sm-9">
-				      <input type="number" class="form-control" id="priority" placeholder="Enter priority number" required>
-				    </div>
-				  </div>
-				  <div class="form-group">
 				    <label class="control-label col-sm-3" for="">Weight:</label>
 				    <div class="col-sm-9">
 				      <input type="number" step="any" class="form-control" id="weight" placeholder="Enter laundry weight" required>

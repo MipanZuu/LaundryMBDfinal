@@ -5,8 +5,7 @@ class Connection{
 	protected $datab;
 	protected $transaction;
 
-								//un phpmyadmin    pass phpmyadmin     ip 				dbname
-	public function __construct($username="root", $password ="", $host="localhost", $dbname="laundry", $options = []){
+	public function __construct($username="root", $password ="", $host="localhost", $dbname="LaundryDB-MBD", $options = []){
 		
 		$this->isConn = TRUE;
 		try{
